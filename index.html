@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de T.NIANG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#accueil"><i class="fas fa-home"></i>Accueil</a></li>
+                <li><a href="#apropos"><i class="fas fa-user"></i>À propos</a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i>Compétences</a></li>
+                <li><a href="#projets"><i class="fas fa-project-diagram"></i>Mes projets</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+      <section id="accueil" class="hero">
+        <div class="hero-content container">
+            <h1>Thieck NIANG</h1>
+            <h2 style="color:#f8f9fa">Étudiante en 2ème année de BUT Informatique</h2>
+            <p>Je recherche un stage de 3 mois à partir d'avril 2026 pour mettre en pratique mes compétences en programmation et participer à des projets variés.</p>
+            <a href="#projets" class="cta-button">
+                Voir mes Projets <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+    
+
+    <!-- Section À propos -->
+<section id="apropos" class="about">
+    <div class="section-header">
+        <h2>À propos</h2>
+    </div>
+
+    <div class="about-wrapper container">
+        
+        <div class="sidebar">
+            <ul>
+                <li><a href="#presentation" id="link-presentation" class="active-link" onclick="showSection('presentation')"><i class="fas fa-bullseye"></i> Présentation</a></li>
+                <li><a href="#softskills" id="link-softskills" onclick="showSection('softskills')"><i class="fas fa-hands-helping"></i> Soft Skills</a></li>
+                <li><a href="#formation" id="link-formation" onclick="showSection('formation')"><i class="fas fa-graduation-cap"></i> Formation</a></li> 
+                <li><a href="#distinction" id="link-distinction" onclick="showSection('distinction')"><i class="fas fa-lightbulb"></i> Ce qui me distingue</a></li>
+                <li><a href="#langues" id="link-langues" onclick="showSection('langues')"><i class="fas fa-language"></i> Langues</a></li>
+            </ul>
+            <button class="cv-btn" onclick="window.location.href='CV-Thieck-Niang.pdf'"><i class="fas fa-download"></i> Télécharger mon CV</button>
+        </div>
+        
+        <div class="content">
+            <div id="presentation" class="section active card-style">
+                <h2>Présentation</h2>
+                <p>Je suis une passionnée d'informatique, curieuse et motivée. Actuellement en deuxième année de BUT Informatique, je me spécialise dans le développement logiciel, le web et l'analyse de données. Je suis à la recherche d'opportunités où je pourrai mettre mes compétences en pratique et continuer d'apprendre au contact de professionnels expérimentés.</p>
+            </div>
+
+            <div id="softskills" class="section card-style">
+                <h2>Soft Skills</h2>
+                <ul class="icon-list">
+                    <li>Communication claire et efficace</li>
+                    <li>Travail en équipe et collaboration</li>
+                    <li>Gestion du temps et des priorités</li>
+                    <li>Adaptabilité et curiosité</li>
+                    <li>Résolution de problèmes complexes</li>
+                </ul>
+            </div>
+            
+            <div id="formation" class="section">
+                <h2>Formation</h2>
+                
+                <div class="formation-timeline-container card-style"> 
+                    <div class="timeline">
+                        <div class="timeline-item left">
+                            <div class="timeline-content"> 
+                                <h4>BAC Scientifique</h4>
+                                <p class="date">2023 - 2024 | Sénégal</p>
+                                <p class="details">Maths, physique, chimie, SVT</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item right">
+                            <div class="timeline-content">
+                                <h4>BUT 1 Informatique</h4>
+                                <p class="date">2024 – 2025 | IUT d'Arles</p>
+                                <p class="details">Dev appli, dev web, BDD, analyse, reseau</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item left">
+                            <div class="timeline-content">
+                                <h4>BUT 2 Informatique</h4>
+                                <p class="date">2026 - 2026 | IUT d'Arles</p>
+                                <p class="details">Dev appli, dev web, BDD, analyse, reseau</p>
+                            </div>
+                        </div>
+                        
+                        </div>
+                </div>
+            </div>
+            
+            <div id="distinction" class="section card-style">
+                <h2>Ce qui me distingue</h2>
+                <p>Ce qui me distingue, c'est ma capacité à apprendre rapidement et mon implication dans tout projet auquel je participe. Je n'hésite pas à sortir de ma zone de confort pour relever de nouveaux défis, et je suis toujours en quête de solutions innovantes pour résoudre des problèmes.</p>
+            </div>
+
+            <div id="langues" class="section card-style">
+                <h2>Langues</h2>
+                <ul class="language-list">
+                    <li><img src="france-flag.jpeg" alt="Français" class="flag"> Français : Courant </li>
+                    <li><img src="senegal-flag.png" alt="Wolof" class="flag"> Wolof : Langue maternelle</li>
+                    <li><img src="uk-flag.png" alt="Anglais" class="flag"> Anglais : Niveau intermédiaire (À affiner)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section><!-- Section Compétences -->
+ <section id="skills" class="skills-section">
+        <div class="section-header">
+            <h2>Mes Compétences</h2>
+        </div>
+    
+        <div class="skills-container">
+            <!-- Langages de programmation -->
+            <div class="skills-category">
+                <h3>Langages de Programmation</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-logo">
+                            <img src="cpp.png" alt="C++">
+                        </div>
+                        <div class="skill-name">C++</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo">
+                            <img src="python.jpeg" alt="Python">
+                        </div>
+                        <div class="skill-name">Python</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo">
+                            <img src="bash.png" alt="Bash">
+                        </div>
+                        <div class="skill-name">Bash</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo">
+                            <img src="java.png" alt="java">
+                        </div>
+                        <div class="skill-name">java</div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Développement Web -->
+            <div class="skills-category">
+                <h3>Développement Web</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-logo">
+                            <img src="html.png" alt="HTML">
+                        </div>
+                        <div class="skill-name">HTML</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo">
+                            <img src="css.png" alt="CSS">
+                        </div>
+                        <div class="skill-name">CSS</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo">
+                            <img src="JavaScript.jpeg" alt="Java Script">
+                        </div>
+                        <div class="skill-name">Java Script</div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Bases de données -->
+            <div class="skills-category">
+                <h3>Bases de Données</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-logo">
+                            <img src="sql.png" alt="SQL">
+                        </div>
+                        <div class="skill-name">SQL</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo">
+                            <img src="post.png" alt="PostgreSQL">
+                        </div>
+                        <div class="skill-name">PostgreSQL</div>
+                    </div>
+                </div>
+            </div>    
+            <!-- Outils et Frameworks -->
+            <div class="skills-category">
+                <h3>Outils et Frameworks</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-logo">
+                            <img src="qt.png" alt="Qt Creator">
+                        </div>
+                        <div class="skill-name">Qt Creator</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-logo">
+                            <img src="git.png" alt="Git">
+                        </div>
+                        <div class="skill-name">Git</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="projets">
+        <div class="container">
+            <h2>Mes Projets</h2>
+            
+            <div class="projets-container">
+                <!-- Projet 1 -->
+                <div class="projet-card">
+                    <div class="projet-image">
+                        <img src="art.png" alt="Projet 1">
+                    </div>
+                    <div class="projet-content">
+                        <h3>Art Explorer</h3>
+                        <p class="projet-description">
+                            J’ai conçu une application web qui permet de rechercher une ville pour découvrir les musées qui s’y trouvent et explorer les œuvres d’art qu’ils abritent. L’utilisateur peut filtrer les œuvres par artiste ou par époque et naviguer facilement parmi les collections.                        </p>
+                        <div class="projet-tags">
+                            <span class="tag">JavaScript(ES6)</span>
+                            <span class="tag">HTML5/SCSS</span>
+                            <span class="tag">Webpack</span>
+                        </div>
+                        <a href="#" class="projet-link">Voir le projet →</a>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="projet-card">
+                    <div class="projet-image">
+                        <img src="master.png" alt="Projet 2">
+                    </div>
+                    <div class="projet-content">
+                        <h3>Gestion des meubles</h3>
+                        <p class="projet-description">
+                            C’est une application de gestion interactive permettant de visualiser, explorer et personnaliser un catalogue de meubles que j’ai faite pour gérer des meubles. On peut charger un fichier en JSON ou en XML, et l’application affiche la liste des meubles qu’il contient. Quand on clique sur un meuble, tous ses détails apparaissent à côté : son nom, son numéro, son poids, sa description, ses dimensions…
+                            L’interface qui est de type master–detail, facilite la navigation entre les meubles et offre la possibilité d’ajouter ou de supprimer des variantes en temps réel.
+                            L’application peut être utilisée en français ou en anglais.                        </p>
+                        <div class="projet-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Qt</span>
+                        </div>
+                        <a href="#" class="projet-link">Voir le projet →</a>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="projet-card">
+                    <div class="projet-image">
+                        <img src="projet3.png" alt="Projet 3">
+                    </div>
+                    <div class="projet-content">
+                        <h3>Comparaison d'algorithme</h3>
+                        <p class="projet-description">
+                            Création de graphiques comparant la complexité de plusieurs algorithme de tri.                        </p>
+                        <div class="projet-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">python</span>
+                            <span class="tag">Agile</span>
+                        </div>
+                        <a href="#" class="projet-link">Voir le projet →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact-section">
+        <h1>Contactez-moi</h1>
+        <p>Si vous avez des questions, des suggestions ou si vous souhaitez discuter d'une collaboration, n'hésitez pas à me contacter !</p>
+
+        <!-- Formulaire de contact -->
+    <form action="https://formspree.io/f/mwpywegk" method="POST" class="contact-form">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" placeholder="Entrez votre email" required>
+
+        <label for="subject">Sujet</label>
+        <input type="text" id="subject" name="subject" placeholder="Entrez le sujet" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Écrivez votre message ici" required></textarea>
+        
+        <input type="hidden" name="_captcha" value="false">
+
+        <button type="submit">Envoyer</button>
+    </form>    </section>
+
+    <footer>
+        <p>&copy; 2025 Thieck NIANG. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Fonction pour afficher la section correspondante
+        // Fonction pour afficher la section correspondante ET activer le lien
+        function showSection(sectionId) {
+            // 1. Gérer l'affichage de la section de contenu
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            const activeSection = document.getElementById(sectionId);
+            if (activeSection) {
+                activeSection.classList.add('active');
+            }
+
+            // 2. Gérer le style du lien actif dans la sidebar
+            const links = document.querySelectorAll('.sidebar ul li a');
+            links.forEach(link => {
+                link.classList.remove('active-link');
+            });
+            
+            const activeLink = document.getElementById('link-' + sectionId);
+            if (activeLink) {
+                activeLink.classList.add('active-link');
+            }
+        }
+
+        // Par défaut, afficher la première section (déjà fait, mais la fonction gère aussi l'état du lien)
+        document.addEventListener("DOMContentLoaded", function() {
+            showSection('presentation');
+        });
+    </script>
+</body>
+</html>
